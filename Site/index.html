@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -66,7 +67,42 @@
         <div class="texto" id="texto">
             <p class="frase">Conheça nosso <b>guia de atendimento:</b></p>
         </div>
-        <div class="container" id="container">oweghguerw</div>
+        <div class="container" id="container">
+            <div>
+                <canvas id="myChart" style="position: relative; height:10vh; width:20vw"></canvas>
+              </div>
+            <script>
+                const labels = [
+                  'Disponíveis para atendimento',
+                  'Em atendimento',
+                  'Não disponíveis para atendimento',
+                  'Novos profissionais na plataforma',
+    
+                ];
+              
+                const data = {
+                  labels: labels,
+                  datasets: [{
+                    label: '',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [64, 81, 33, 47],
+                  }]
+                };
+              
+                const config = {
+                  type: 'bar',
+                  data: data,
+                  options: {}
+                };
+              </script>
+              <script>
+                const myChart = new Chart(
+                  document.getElementById('myChart'),
+                  config
+                );
+            </script>
+        </div>
     </div>
     <!-- <div id="visao">
         <h2 class="text-center">Visão geral</h2>
