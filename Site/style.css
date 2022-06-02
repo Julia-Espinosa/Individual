@@ -1,10 +1,11 @@
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
 
 html{
     scroll-behavior: smooth;
 }
 body{
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 .header{
@@ -118,7 +119,7 @@ ul {
     margin: 0;
     width: 44vh;
     font-size: xx-large;
-    padding-left: 34vh;
+    padding-left: 5vh;
     text-align: center;
 }
 
@@ -141,3 +142,163 @@ ul {
     justify-content: center;
     align-items: center;
 }
+
+.myChart{
+    display: block;
+    box-sizing: border-box;
+    height: 409px;
+    width: 819px;
+    margin-left: 11vh;
+    margin-top: 2vh;
+}
+
+.grafico_2{
+    height: 120vh;
+    background-color: #3C74A9;
+}
+
+.container_2{
+    height: 69vh;
+    width: 154vh;
+    background-color: aliceblue;
+    margin-top: 3vh;
+    margin-left: 32vh;
+    margin-top: 9vh;
+    border-radius: 9vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.grafico_2 .texto p b{
+    color: #FFE486;
+}
+
+.grafico_2 .texto p{
+    margin: 0;
+    width: 80vh;
+    font-size: xxx-large;
+    padding-top: 7vh;
+    padding-right: 37vh;
+    text-decoration: none;
+}
+
+.espaco_textos{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+
+.caixa_texto{
+    background-color: aliceblue;
+    width: 40vh;
+    display: flex;
+    text-align: center;
+    height: 15vh;
+    margin-top: 6vh;
+    align-items: center;
+    border-radius: 3vh;
+}
+
+.caixa_texto p{
+    background-color: aliceblue;
+    font-size: medium;
+}
+
+.myChart_2{
+    display: block;
+    box-sizing: border-box;
+    height: 443px;
+    width: 887px;
+    padding-top: 3vh;
+    margin-left: 9vh;
+}
+
+.container_imgs{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 56vh;
+    margin-top: 44vh;
+    margin-right: 3vh;
+}
+
+.infos p{
+    color: #022444;
+    display: block;
+    width: 63vh;
+    font-size: larger;
+    padding-left: 21vh;
+}
+
+.infos p b{
+    color: #F2C112;
+    display: block;
+    width: 137vh;
+    font-size: large;
+    padding-left: 18vh;
+    text-align: center;
+    font-weight: normal;
+}
+
+.infos p u{
+    color: #022444;
+    display: block;
+    margin-left: -26px;
+    width: 44vh;
+    font-size: xxx-large;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 15vh;
+}
+
+.infos .container_imgs p{
+    display: block;
+    width: 63vh;
+    font-size: larger;
+    padding-left: 41px;
+}
+
+.img_inf{
+
+}
+
+.depressao li a{
+    text-decoration: none;
+    background-color: #022444;
+    color: #FFE486;
+    padding-left: 8vh;
+    padding-right: 8vh;
+    border-radius: 10vh;
+} 
+
+.ansiedade li a{
+    text-decoration: none;
+    background-color: #022444;
+    color: #FFE486;
+    padding-left: 8vh;
+    padding-right: 8vh;
+    border-radius: 10vh;
+} 
+
+.footer{
+    background-color: #3C74A9;
+    height: 40vh;
+}
+
+.footer p{
+color: white;
+text-align: center;
+padding-top: 11vh;
+}
+
+.contatos{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 9vh;
+}
+
+.contatos li a{
+    text-decoration: none;
+    color: white;
+} 

@@ -55,10 +55,10 @@
             </div>
             <div class="botao_inicial" id="botao_inicial">
                 <div class="espaco_1" id="espaco_1">
-                <button><img id="i_188" src="">188</button>
+                    <button><img id="i_188" src="">188</button>
                 </div>
                 <div class="espaco_2" id="espaco_2">
-                <button><img id="chat" src="">Chat</button>
+                    <button><img id="chat" src="">Chat</button>
                 </div>
             </div>
         </div>
@@ -68,156 +68,150 @@
             <p class="frase">Conheça nosso <b>guia de atendimento:</b></p>
         </div>
         <div class="container" id="container">
-            <div>
-                <canvas id="myChart" style="position: relative; height:10vh; width:20vw"></canvas>
-              </div>
-            <script>
-                const labels = [
-                  'Disponíveis para atendimento',
-                  'Em atendimento',
-                  'Não disponíveis para atendimento',
-                  'Novos profissionais na plataforma',
-    
-                ];
-              
-                const data = {
-                  labels: labels,
-                  datasets: [{
-                    label: '',
-                    backgroundColor: 'rgb(255, 99, 132)',
-                    borderColor: 'rgb(255, 99, 132)',
-                    data: [64, 81, 33, 47],
-                  }]
-                };
-              
-                const config = {
-                  type: 'bar',
-                  data: data,
-                  options: {}
-                };
-              </script>
-              <script>
-                const myChart = new Chart(
-                  document.getElementById('myChart'),
-                  config
-                );
-            </script>
-        </div>
-    </div>
-    <!-- <div id="visao">
-        <h2 class="text-center">Visão geral</h2>
-        <hr id="hr_visao" class="bg_black">
-        <div id="main_visao" class="flex center">
-            <div id="div_img_visao">
-                <img src="assets/imgs/img-visao.png">
-            </div>
-            <div>
-                <p>
-                    &nbsp&nbsp&nbsp A Greentech desenvolve e fabrica projetos de <br> estufas agrícolas que utilizam de tecnologia de <br> ponta ao melhor custo/benefício possível para o <br> cliente, contribuindo no plantio mais proveitoso <br> e saudável possível para obter uma boa <br> colheita, mantendo um perfil sustentável que <br> não utilize produtos que afetem as hortaliças.
-                </p>
-                <hr id="hr_visao_2" class="bg_black">
-                <p>
-                    &nbsp&nbsp&nbsp A produção feita em estufas traz diversas <br> vantagens ao produtor, pois proporciona <br> através do uso de tecnologia maior controle <br> sobre o plantio de forma saudável e segura, <br> aumentando a produção, a qualidade e a <br> proteção contra pragas, fungos e bactérias nas <br> plantas, o que resulta também na utilização de <br> menos agrotóxicos e na possibilidade de <br> plantação em qualquer época do ano.
-                </p>
+            <div style="position: relative; height:65vh; width:65vw">
+                <canvas id="myChart" class="myChart"></canvas>
             </div>
         </div>
     </div>
-    <div id="sobre" class="flex">
-        <div>
-            <img src="assets/imgs/img-sobre.png">
-        </div>
-        <div id="box_sobre" class="flex center">
-            <div class="flex direction_column">
-                <div>
-                    <h2 class="text-center">Por que existimos?</h2>
-                    <hr id="hr_sobre" class="bg_black">
-                </div>
-                <div>
-                    <p class="mt_100">
-                        &nbsp&nbsp&nbspA Greentech surgiu como um projeto inicial que visava <br> aumentar a produção de tomates no território nacional <br> pelo índice de produção e comercialização deste. Após <br> estudos feitos o interesse da empresa em beneficiar essa <br> área do agronegócio continuou, o que fez com que a <br> equipe surgisse com novas ideias.<br>
-                        &nbsp&nbsp&nbspNosso propósito desde o principio é fazer com que o <br> nosso cliente tenha acessibilidade e praticidade a uma <br> boa e completa estufa inteligente, por meio da tecnologia <br> que nossa empresa oferece, fazendo assim a sua renda <br> ser maior do que o habitual. Não são promessas, apenas <br> dados! O fato do Brasil ser o nono maior produtor de <br> tomates mundialmente e estar mantendo esta posição <br> há mais de uma década também foi decisivo na hora de <br> se manter no negócio e trazer ainda mais <br> comprometimento com nossos produtos.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr id="hr_break" class="bg_d_green">
-    <div id="empresa">
-        <h2 class="text-center">Empresas parceiras</h2>
-        <hr id="hr_empresa" class="bg_black">
 
-        <div id="box_empresa" class="flex center align mt_100">
-            <div class="quadro_empresa_2 flex center align">
-                <img src="assets/imgs/img-2-empresa.png">
+    <div class="grafico_2" id="grafico_2">
+        <div class="espaco_textos" id="espaco_textos">
+            <div class="texto" id="texto">
+                <p class="frase">Horário com mais <b>atendentes disponíveis:</b></p>
             </div>
-            <div id="empresa_meio" class="quadro_empresa flex center align">
-                <img src="assets/imgs/img-1-empresa.png">
-            </div>
-            <div class="quadro_empresa_2 flex center align">
-                <img src="assets/imgs/img-3-empresa.png">
+            <div class="caixa_texto" id="caixa_texto">
+                <p class="aviso">Madrugadas estão sujeitas a um número de espera maior</p>
             </div>
         </div>
-        <p class="text-center mb_100">
-            Destaca-se por oferecer aos clientes comerciais e <br> residenciais os melhores produtos e projetos para <br> sistemas de irrigação.
-        </p>
-    </div>
-    <div id="depoimento" class="bg_l_green">
-        <h2 class="white text-center pt_40">Depoimentos</h2>
-        <hr id="hr_depoimento" class="bg_white">
-        <div class="flex center mt_100">
-            <div class="bg_white box-depoimento mb_100 flex center direction_column align">
-                <img src="assets/imgs/img-depoimento_1.jpg" class="img_depoimento">
-                <h4 class="text-center">José de Carvalho</h4>
-                <p class="text-center">
-                    "Esta empresa trouxe resultados incríveis para o meu negócio. Além da produção de tomates ter aumentado, a qualidade melhorou muito graças às tecnologias da GreenTech."
-                </p>
-            </div>
-            <div id="box_1_depoimento" class="bg_white box-depoimento mb_100 flex center direction_column align">
-                <img src="assets/imgs/img-depoimento_2.jpg" class="img_depoimento">
-                <h4 class="text-center">Carlos Ferrari</h4>
-                <p class="text-center">
-                    "Depois de contratar a GreenTech, tive um aumento de mais de 40% na minha produção de tomates. Simplesmente fantástico!"
-                </p>
-            </div>
-            <div class="bg_white box-depoimento mb_100 flex center direction_column align">
-                <img src="assets/imgs/img-depoimento_3.jpg" class="img_depoimento">
-                <h4 class="text-center">Daniel Augusto</h4>
-                <p class="text-center">
-                    "Faziam anos que não aumentava o faturamento da minha produção, mas graças à GreenTech, hoje minha empresa dobra o faturamento a cada 2 anos."
-                </p>
+        <div class="container_2" id="container_2">
+            <div style="position: relative; height:65vh; width:65vw;">
+                <canvas id="myChart_2" class="myChart_2" ;></canvas>
             </div>
         </div>
     </div>
-    <div id="contato">
-        <h2 class="text-center">Informações de contato</h2>
-        <hr id="hr_contato" class="bg_black">
-        <div class="flex mt_100 mb_100 center">
-            <div id="inf_contato">
-                <div>
-                    <h4 class="m_0">Telefone:</h4>
-                    <p class="m_0">(11) 99999-9999</p>
-                </div><br><br>
-                <div>
-                    <h4 class="m_0">E-mail:</h4>
-                    <p class="m_0">greentech@gmail.com</p>
-                </div><br><br>
-                <div>
-                    <h4 class="m_0">Endereço:</h4>
-                    <p class="m_0">
-                        Rua Haddock Lobo, 595 <br>
-                        Cerqueira César <br>
-                        São Paulo - SP
-                    </p>
+    </div>
+
+
+    <div class="infos" id="infos">
+        <p><u>Transtornos</u></p>
+        <p>Criamos um infográfico para você entender melhor alguns transtornos psicológicos.</p>
+        <div class="container_imgs" id="container_imgs">
+            <div id="img_inf" class="img_inf">
+                <img id="saiba" src="">
+                <p>Ansiedade</p>
+                <div class="ansiedade" id="ansiedade">
+                    <ul>
+                        <li><a href="doencas.html" id="ansiedade" class="ansiedade">Ansiedade</a></li>
+                    </ul>
                 </div>
             </div>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.287482017866!2d-46.66380268489707!3d-23.558116367357822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d2b063f663%3A0xc567c0d16d0bc582!2sS%C3%A3o%20Paulo%20Tech%20School!5e0!3m2!1spt-BR!2sbr!4v1649653675646!5m2!1spt-BR!2sbr" width="600" height="300" style="border: 3px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div id="img_inf" class="img_inf">
+                <img id="saiba" src="">
+                <p>Depressao</p>
+                <div class="depressao" id="depressao">
+                    <ul>
+                        <li><a href="doencas.html" id="depressao" class="depressao">Depressão</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <p><b>Lembre-se, você não deve se autodiagnosticar! Marque um atendimento com um de nossos profissionais e
+                busque acompanhamento médico.</b></p>
+    </div>
+<div class="footer" id="footer">
+    <div class="contatos" id="contatos">
+        <div id="img_inf" class="img_inf">
+            <img id="telefone" src="">
+            <div class="telefone" id="telefone">
+                <ul>
+                    <li><a href="" id="telefone" class="telefone">Telefone</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="img_inf" class="img_inf">
+            <img id="endereco" src="">
+            <div class="endereco" id="endereco">
+                <ul>
+                    <li><a href="" id="endereco" class="endereco">Endereço</a></li>
+                </ul>
             </div>
         </div>
     </div>
-    <footer class="flex bg_d_green white">
-        <p>Copyright &copy; Greentech | Todos os direitos reservados.</p>
-    </footer> -->
+    <p>Copyright &copy; CVV | Todos os direitos reservados. <br> Feito por Julia Espinosa</p>
+</div>
 </body>
 
 </html>
+
+<script>
+    const labels = [
+        'Disponíveis para atendimento',
+        'Em atendimento',
+        'Não disponíveis para atendimento',
+        'Novos profissionais na plataforma',
+
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: '',
+            backgroundColor: ['#70B1EF',
+                '#3C74A9',
+                '#144472',
+                '#022444'
+            ],
+            borderColor: 'rgb(255, 99, 132)',
+            data: [64, 81, 33, 47],
+        }]
+    };
+
+    const labels2 = [
+        '12:00',
+        '14:00',
+        '16:00',
+        '18:00',
+        '20:00',
+        '22:00',
+        '00:00',
+        '02:00',
+        '04:00',
+        '06:00',
+        '08:00',
+        '10:00',
+    ];
+
+    const data2 = {
+        labels: labels2,
+        datasets: [{
+            label: 'Acessos',
+            backgroundColor: '#FFE486',
+            borderColor: '#FFE486',
+            data: [10, 13, 17, 15, 21, 19, 23, 37, 35, 15, 7, 5],
+        }]
+    };
+
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {}
+    };
+
+    const config2 = {
+        type: 'line',
+        data: data2,
+        options: {}
+    };
+
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+
+    const myChart2 = new Chart(
+        document.getElementById('myChart_2'),
+        config2
+    );
+</script>
