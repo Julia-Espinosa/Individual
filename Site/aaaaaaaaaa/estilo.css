@@ -415,3 +415,15 @@ ul {
     background: #bd4033;
     border-color: #bd4033;
 }
+
+.text-muted{
+    color: #6c757d!important;
+    display: flex;
+    justify-content: space-around;
+}
+
+.p-4{
+    padding: 1.5rem!important;
+    display: flex;
+    flex-direction: column;
+}
