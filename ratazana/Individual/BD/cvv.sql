@@ -1,35 +1,22 @@
-create database cvv;
-use cvv;
+CREATE DATABASE cvv;
 
-create table funcionario(
-idFuncionario int primary key auto_increment,
-nomeFuncionario varchar(45),
-idadeFuncionario char(2),
-cpfFuncionario char (11),
-semestreFuncionario varchar(2),
-crpFuncionario varchar (30),
-emailFuncionario varchar (45),
-senhaFuncionario varchar(45)
+USE cvv;
+
+CREATE TABLE usuario (
+	idUsuario INT PRIMARY KEY AUTO_INCREMENT,
+	nomeUsuario VARCHAR(45),
+	emailUsuario VARCHAR(45),
+	senhaUsuario VARCHAR(45)
 );
 
-create table paciente(
-idPaciente int primary key auto_increment,
-nomePaciente varchar(45),
-idadePaciente char(2),
-cpfPaciente char (11),
-emailPaciente varchar (45),
-senhaPaciente varchar(45)
+CREATE TABLE acesso (
+idAcesso int primary key auto_increment,
+cliques datetime
 );
 
 create table telefone(
 idTelefone int primary key auto_increment,
 celular varchar(45),
-fkFuncionario int,
-fkPaciente int,
-foreign key (fkFuncionario) references Funcionario (idFuncionario),
-foreign key (fkPaciente) references Paciente (idPaciente)
+fkUsuario int,
+foreign key (fkUsuario) references usuario (idUsuario)
 );
-
-create table acesso(
-idAcesso int primary key auto_increment,
-cliques datetime);
