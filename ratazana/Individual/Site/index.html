@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div id="home">
+        <div class="header">
+            <div id="header_img" class="header_img">
+                <a href="#home"><img id="logo" src="file:///D:/individual/logo1.PNG"></a>
+            </div>
+            <div class="header_navbar" id="header_navbar">
+                <div class="login" id="login">
+                    <ul>
+                        <li><a href="login.html">Entrar</a></li>
+                    </ul>
+                </div>
+                <div class="cadastro" id="cadastro">
+                    <ul>
+                        <li><a href="cadastro.html">Cadastrar-se</a></li>
+                    </ul>
+                </div>
+                <div id="nav" class="nav">
+                    <img id="saiba" src="file:///D:/individual/Capturar2.PNG" onclick="saiba">
+                </div>
+                <!-- <script>
+                    function saiba() {
+                        
+                    }
+                </script> -->
+                <!-- <div id="nav" class="nav">
+                <ul>
+                <li><select name="saiba" id="saiba">
+                    <option>Saiba mais</option>
+                    <option value="1" data-image="" href="#projeto">Projeto</option>
+                    <option value="2" data-image="" href="#localizacao">Localização e contato</option>
+                    <option value="3" data-image="" href="#doenças">Doenças</option>
+                    <option value="4" data-image="" href="#blog">Doenças</option>
+                  </select></li>
+                </ul>
+                </div> -->
+            </div>
+        </div>
+        <div class="banner">
+            <div class="texto" id="texto">
+                <p class="frase">Precisa de ajuda imediata? <b>Ligue 188</b> ou <b>contate um dos nossos atendentes</b>
+                    online.</p>
+            </div>
+            <div class="botao_inicial" id="botao_inicial">
+                <div class="espaco_1" id="espaco_1">
+                    <button><img id="i_188" src="">188</button>
+                </div>
+                <div class="espaco_2" id="espaco_2">
+                    <button><img id="chat" src="">Chat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grafico_home" id="grafico_home">
+        <div class="texto" id="texto">
+            <p class="frase">Conheça nosso <b>guia de atendimento:</b></p>
+        </div>
+        <div class="container" id="container">
+            <div style="position: relative; height:65vh; width:65vw">
+                <canvas id="myChart" class="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="grafico_2" id="grafico_2">
+        <div class="espaco_textos" id="espaco_textos">
+            <div class="texto" id="texto">
+                <p class="frase">Horário com mais <b>atendentes disponíveis:</b></p>
+            </div>
+            <div class="caixa_texto" id="caixa_texto">
+                <p class="aviso">Madrugadas estão sujeitas a um número de espera maior</p>
+            </div>
+        </div>
+        <div class="container_2" id="container_2">
+            <div style="position: relative; height:65vh; width:65vw;">
+                <canvas id="myChart_2" class="myChart_2" ;></canvas>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="infos" id="infos">
+        <p><u>Transtornos</u></p>
+        <p>Criamos um infográfico para você entender melhor alguns transtornos psicológicos.</p>
+        <div class="container_imgs" id="container_imgs">
+            <div id="img_inf" class="img_inf">
+                <img id="saiba" src="">
+                <p>Ansiedade</p>
+                <div class="ansiedade" id="ansiedade">
+                    <ul>
+                        <li><a href="doencas.html" id="ansiedade" class="ansiedade">Ansiedade</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="img_inf" class="img_inf">
+                <img id="saiba" src="">
+                <p>Depressao</p>
+                <div class="depressao" id="depressao">
+                    <ul>
+                        <li><a href="doencas.html" id="depressao" class="depressao">Depressão</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <p><b>Lembre-se, você não deve se autodiagnosticar! Marque um atendimento com um de nossos profissionais e
+                busque acompanhamento médico.</b></p>
+    </div>
+<div class="footer" id="footer">
+    <div class="contatos" id="contatos">
+        <div id="img_inf" class="img_inf">
+            <img id="telefone" src="">
+            <div class="telefone" id="telefone">
+                <ul>
+                    <li><a href="" id="telefone" class="telefone">Telefone</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="img_inf" class="img_inf">
+            <img id="endereco" src="">
+            <div class="endereco" id="endereco">
+                <ul>
+                    <li><a href="" id="endereco" class="endereco">Endereço</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p>Copyright &copy; CVV | Todos os direitos reservados. <br> Feito por Julia Espinosa</p>
+</div>
+</body>
+
+</html>
+
+<script>
+    const labels = [
+        'Disponíveis para atendimento',
+        'Em atendimento',
+        'Não disponíveis para atendimento',
+        'Novos profissionais na plataforma',
+
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: '',
+            backgroundColor: ['#70B1EF',
+                '#3C74A9',
+                '#144472',
+                '#022444'
+            ],
+            borderColor: 'rgb(255, 99, 132)',
+            data: [64, 81, 33, 47],
+        }]
+    };
+
+    const labels2 = [
+        '12:00',
+        '14:00',
+        '16:00',
+        '18:00',
+        '20:00',
+        '22:00',
+        '00:00',
+        '02:00',
+        '04:00',
+        '06:00',
+        '08:00',
+        '10:00',
+    ];
+
+    const data2 = {
+        labels: labels2,
+        datasets: [{
+            label: 'Acessos',
+            backgroundColor: '#FFE486',
+            borderColor: '#FFE486',
+            data: [10, 13, 17, 15, 21, 19, 23, 37, 35, 15, 7, 5],
+        }]
+    };
+
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {}
+    };
+
+    const config2 = {
+        type: 'line',
+        data: data2,
+        options: {}
+    };
+
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+
+    const myChart2 = new Chart(
+        document.getElementById('myChart_2'),
+        config2
+    );
+</script>

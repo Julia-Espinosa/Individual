@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.header{
+    background-color: #3C74A9;
+    height: 19vh;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+div .header_navbar{
+    display: flex;
+    justify-content: center;
+    padding-right: 11vh;
+    padding-top: 6vh;
+}
+
+ul {
+    list-style: none;
+}
+
+.header_navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+#logo{
+    height: 14vh;
+    width: 25vh;
+    padding-left: 14vh;
+    padding-top: 2vh;
+}
+
+#saiba{
+    height: 6vh;
+    width: 6vh;
+    margin-left: 6vh;
+    padding-top: 1vh;
+    cursor: pointer;
+}
+
+.banner{
+    height: 85vh;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner p b{
+    color: #F2C112;
+}
+
+.banner p{
+    display: block;
+    margin: 0;
+    padding-top: 25vh;
+    width: 95vh;
+    font-size: xxx-large;
+    padding-right: 27vh;
+}
+
+.banner .botao_inicial button {
+    background-color: #3C74A9;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-align: center;
+    align-items: center;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 75vh;
+    margin-top: 15vh;
+    height: 11vh;
+    width: 42vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.banner .botao_inicial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -25vh;
+    padding-right: 10vh;
+}
+
+.botao_inicial .espaco_1{
+    margin: 0;
+    padding: 0;
+}
+
+.botao_inicial .espaco_2{
+    margin: 0;
+    padding: 0;
+}
+
+#i_188{
+
+}
+
+#chat{
+
+}
+
+.grafico_home p b{
+    color: #F2C112;
+}
+
+.grafico_home p{
+    display: block;
+    margin: 0;
+    width: 44vh;
+    font-size: xx-large;
+    padding-left: 5vh;
+    text-align: center;
+}
+
+.grafico_home{
+    height: 105vh;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    height: 69vh;
+    width: 154vh;
+    background-color: aliceblue;
+    margin-top: 3vh;
+    margin-left: 5vh;
+    border-radius: 9vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.myChart{
+    display: block;
+    box-sizing: border-box;
+    height: 409px;
+    width: 819px;
+    margin-left: 11vh;
+    margin-top: 2vh;
+}
+
+.grafico_2{
+    height: 120vh;
+    background-color: #3C74A9;
+}
+
+.container_2{
+    height: 69vh;
+    width: 154vh;
+    background-color: aliceblue;
+    margin-top: 3vh;
+    margin-left: 32vh;
+    margin-top: 9vh;
+    border-radius: 9vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.grafico_2 .texto p b{
+    color: #FFE486;
+}
+
+.grafico_2 .texto p{
+    margin: 0;
+    width: 80vh;
+    font-size: xxx-large;
+    padding-top: 7vh;
+    padding-right: 37vh;
+    text-decoration: none;
+}
+
+.espaco_textos{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+
+.caixa_texto{
+    background-color: aliceblue;
+    width: 40vh;
+    display: flex;
+    text-align: center;
+    height: 15vh;
+    margin-top: 6vh;
+    align-items: center;
+    border-radius: 3vh;
+}
+
+.caixa_texto p{
+    background-color: aliceblue;
+    font-size: medium;
+}
+
+.myChart_2{
+    display: block;
+    box-sizing: border-box;
+    height: 443px;
+    width: 887px;
+    padding-top: 3vh;
+    margin-left: 9vh;
+}
+
+.container_imgs{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 56vh;
+    margin-top: 44vh;
+    margin-right: 3vh;
+}
+
+.infos p{
+    color: #022444;
+    display: block;
+    width: 63vh;
+    font-size: larger;
+    padding-left: 21vh;
+}
+
+.infos p b{
+    color: #F2C112;
+    display: block;
+    width: 137vh;
+    font-size: large;
+    padding-left: 18vh;
+    text-align: center;
+    font-weight: normal;
+}
+
+.infos p u{
+    color: #022444;
+    display: block;
+    margin-left: -26px;
+    width: 44vh;
+    font-size: xxx-large;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 15vh;
+}
+
+.infos .container_imgs p{
+    display: block;
+    width: 63vh;
+    font-size: larger;
+    padding-left: 41px;
+}
+
+.img_inf{
+
+}
+
+.depressao li a{
+    text-decoration: none;
+    background-color: #022444;
+    color: #FFE486;
+    padding-left: 8vh;
+    padding-right: 8vh;
+    border-radius: 10vh;
+} 
+
+.ansiedade li a{
+    text-decoration: none;
+    background-color: #022444;
+    color: #FFE486;
+    padding-left: 8vh;
+    padding-right: 8vh;
+    border-radius: 10vh;
+} 
+
+.footer{
+    background-color: #3C74A9;
+    height: 40vh;
+}
+
+.footer p{
+color: white;
+text-align: center;
+padding-top: 11vh;
+}
+
+.contatos{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 9vh;
+}
+
+.contatos li a{
+    text-decoration: none;
+    color: white;
+} 
