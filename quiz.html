@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+    <title>Formulário</title>
+
+    
+</head>
+<body>
+    
+    <div class="container_home" id="container_home">
+        <div class="box_home" id="box_home">
+            <p>Por favor, responda o formulário enquanto aguarda.<br>
+            Responda indicando o quanto você tem sido incomodado por cada 
+            sintoma na última semana, <b>incluindo hoje</b>.</p>
+<button onclick="comecar()" class="comecar">Responder</button>
+        </div>
+    </div>
+    <div class="container1" id="container1">
+        <div class="box" id="box">
+            <div class="pergunta1" id="pergunta1"><p>Dormência ou formigamento.</p> </div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2" id="container2">
+        <div class="box" id="box">
+            <div class="pergunta2" id="pergunta2"><p>Sensação de calor.</p> </div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container3" id="container3">
+        <div class="box" id="box">
+            <div class="pergunta3" id="pergunta3"><p>Tremores na perna.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container4" id="container4">
+        <div class="box" id="box">
+            <div class="pergunta4" id="pergunta4"><p>Incapaz de relaxar.</div>
+                <div class="boxes" id="boxes">
+                    <button onclick="um()" class="um">Absolutamente não</button>
+                    <br>
+                    <br>
+                    <button onclick="dois()" class="dois">Levemente</button>
+                </div>
+                <div class="boxes" id="boxes">
+                    <button onclick="tres()" class="tres">Moderadamente</button>
+                    <br>
+                    <br>
+                    <button onclick="quatro()" class="quatro">Gravemente</button>
+                </div>
+        </div>
+    </div>
+
+    <div class="container5" id="container5">
+        <div class="box" id="box">
+            <div class="pergunta5" id="pergunta5"><p>Medo que aconteça o pior.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container6" id="container6">
+        <div class="box" id="box">
+            <div class="pergunta6" id="pergunta6"><p>Atordoamento ou tontura.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container7" id="container7">
+        <div class="box" id="box">
+            <div class="pergunta7" id="pergunta7"><p>Palpitação ou aceleração no coração.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container8" id="container8">
+        <div class="box" id="box">
+            <div class="pergunta8" id="pergunta8"><p>Falta de equilíbrio.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container9" id="container9">
+        <div class="box" id="box">
+            <div class="pergunta9" id="pergunta9"><p>Sensação de pânico ou terror.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container10" id="container10">
+        <div class="box" id="box">
+            <div class="pergunta10" id="pergunta10"><p>Nervosismo.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container11" id="container11">
+        <div class="box" id="box">
+            <div class="pergunta11" id="pergunta11"><p>Sensação de sufocação.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container12" id="container12">
+        <div class="box" id="box">
+            <div class="pergunta12" id="pergunta12"><p>Tremores nas mãos.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container13" id="container13">
+        <div class="box" id="box">
+            <div class="pergunta13" id="pergunta13"><p>Tremulamento.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container14" id="container14">
+        <div class="box" id="box">
+            <div class="pergunta14" id="pergunta14"><p>Medo de perder o controle.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container15" id="container15">
+        <div class="box" id="box">
+            <div class="pergunta15" id="pergunta15"><p>Dificuldade de respirar.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container16" id="container16">
+        <div class="box" id="box">
+            <div class="pergunta16" id="pergunta16"><p>Medo de morrer.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container17" id="container17">
+        <div class="box" id="box">
+            <div class="pergunta17" id="pergunta17"><p>Amedrontamento.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container18" id="container18">
+        <div class="box" id="box">
+            <div class="pergunta18" id="pergunta18"><p>Indigestão ou desconforto no abdômen.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container19" id="container19">
+        <div class="box" id="box">
+            <div class="pergunta19" id="pergunta19"><p>Sensação de desmaio.</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container20" id="container20">
+        <div class="box" id="box">
+            <div class="pergunta20" id="pergunta20"><p>Rosto afogueado</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container21" id="container21">
+        <div class="box" id="box">
+            <div class="pergunta21" id="pergunta21"><p>Sudorese</p></div>
+            <div class="boxes" id="boxes">
+                <button onclick="um()" class="um">Absolutamente não</button>
+                <br>
+                <br>
+                <button onclick="dois()" class="dois">Levemente</button>
+            </div>
+            <div class="boxes" id="boxes">
+                <button onclick="tres()" class="tres">Moderadamente</button>
+                <br>
+                <br>
+                <button onclick="quatro()" class="quatro">Gravemente</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container_final" id="container_final">
+        <div class="box_home" id="box_home">
+            <div class="final" id="final"><p>Obrigado por responder, por favor aguarde o atendente responsável.</p></div>
+            <div class="boxes_final" id="boxes_final"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+<script>
+
+    var vt_pontos = [];
+
+    function um() {
+        count += 1;
+    }
+
+    function dois() {
+        count += 2;
+    }
+
+    function tres() {
+        count += 3;
+    }
+
+    function quatro() {
+        count += 4;
+    }
+
+    var acertos = true;
+
+    function comecar() {
+        container_home.style.display = 'none';
+        container1.style.display = 'block';
+        var count = 0;
+
+        if (acertos == false) {
+            count++;
+        }
+    }
+
+        function correta1() {
+            container1.style.display = 'none';
+            container2.style.display = 'block';
+        }
+        function correta2() {
+            container2.style.display = 'none';
+            container3.style.display = 'block';
+        }
+        function correta3() {
+            container3.style.display = 'none';
+            container4.style.display = 'block';
+        }
+        function correta4() {
+            container4.style.display = 'none';
+            container5.style.display = 'block';
+        }
+        function correta5() {
+            container5.style.display = 'none';
+            container6.style.display = 'block';
+        }
+        function correta6() {
+            container6.style.display = 'none';
+            container7.style.display = 'block';
+        }
+        function correta7() {
+            container7.style.display = 'none';
+            container8.style.display = 'block';
+        }
+        function correta8() {
+            container8.style.display = 'none';
+            container9.style.display = 'block';
+        }
+        function correta9() {
+            container9.style.display = 'none';
+            container10.style.display = 'block';
+        }
+        function correta10() {
+            container10.style.display = 'none';
+            container11.style.display = 'block';
+        }
+        function correta11() {
+            container11.style.display = 'none';
+            container12.style.display = 'block';
+        }
+        function correta12() {
+            container12.style.display = 'none';
+            container13.style.display = 'block';
+        }
+        function correta13() {
+            container13.style.display = 'none';
+            container14.style.display = 'block';
+        }
+        function correta14() {
+            container14.style.display = 'none';
+            container15.style.display = 'block';
+        }
+        function correta15() {
+            container15.style.display = 'none';
+            container16.style.display = 'block';
+        }
+        function correta16() {
+            container16.style.display = 'none';
+            container_final.style.display = 'block';
+        }
+        function errada() {
+            container1.style.display = 'none';
+            container2.style.display = 'none';
+            container3.style.display = 'none';
+            container4.style.display = 'none';
+            container5.style.display = 'none';
+            container6.style.display = 'none';
+            container7.style.display = 'none';
+            container8.style.display = 'none';
+            container9.style.display = 'none';
+            container10.style.display = 'none';
+            container11.style.display = 'none';
+            container12.style.display = 'none';
+            container13.style.display = 'none';
+            container14.style.display = 'none';
+            container15.style.display = 'none';
+            container16.style.display = 'none';
+            container_erro.style.display = 'block';
+        }
+
+
+        function recomecar() {
+            container_final.style.display = 'none';
+            container_home.style.display = 'block';
+        }
+</script>
